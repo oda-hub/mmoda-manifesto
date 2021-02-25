@@ -13,7 +13,7 @@ It is not meant to be itself an all-around distributed runner system (like was d
 
 ### Actually fit-for-purpose
 
-Quite little manpower is dedicated in ODA to features which are not motivated by involved projects. For example, [INTEGRAL project](https://www.isdc.unige.ch) and [SNF-funded multi-messenger transient project]() are key contributors at this time, and will develop features relevant for their specific goals.
+Quite little manpower is dedicated in ODA to features which are not motivated by involved projects. For example, [INTEGRAL project](https://www.isdc.unige.ch) and [SNF-funded multi-messenger transient project]() are key contributors at this time, and will develop features relevant for their specific goals: [multi-instrument cross-calibration](), [multi-messenger transient discoveries](), and [quick-look analysis of fresh INTEGRAL data]().
 
 ## Attribution for Data And Software: Provencance
 
