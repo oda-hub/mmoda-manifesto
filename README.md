@@ -11,6 +11,10 @@
 ODA is meant to be **collection of interfaces, adapters, and tools to leverage existing data analysis workflows and workflow management platform**.
 It is not meant to be itself an all-around distributed runner system (like was done and is done by various specific project).
 
+### Actually fit-for-purpose
+
+Quite little manpower is dedicated in ODA to features which are not motivated by involved projects. For example, [INTEGRAL project](https://www.isdc.unige.ch) and [SNF-funded multi-messenger transient project]() are key contributors at this time, and will develop features relevant for their specific goals.
+
 ## Attribution for Data And Software: Provencance
 
 The platform itself contain very limited (if any) additions to scientific data analysis workflows. 
