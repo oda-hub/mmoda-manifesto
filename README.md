@@ -13,7 +13,10 @@ It is not meant to be itself an all-around distributed runner system (like was d
 
 ### Actually fit-for-purpose
 
-At this point, quite little manpower is dedicated in ODA to features which are not motivated by involved projects. Original development was supported by [mutualization efforts of UNIGE]() but since then ODA evolved into a collective multi-instutute multi-project effort. For example, [INTEGRAL project](https://www.isdc.unige.ch) and [SNF-funded multi-messenger transient project]() are key contributors at this time, and will develop features relevant for their specific goals: [multi-instrument cross-calibration](), [multi-messenger transient discoveries](), and [quick-look analysis of fresh INTEGRAL data](). [Uni Paris and FACE]() are striving to become an important contributor. [SmartSky project with SDSC]() is developing contribution of SDSS.
+At this point, quite little manpower is dedicated in ODA to features which are not motivated by involved projects. Original development was supported by [mutualization efforts of UNIGE]() but since then ODA evolved into a collective multi-instutute multi-project effort. For example:
+ * [INTEGRAL project](https://www.isdc.unige.ch) and [SNF-funded multi-messenger transient project]() are key contributors at this time, and will develop features relevant for their specific goals: [multi-instrument cross-calibration](), [multi-messenger transient discoveries](), and [quick-look analysis of fresh INTEGRAL data]()
+ * [Uni Paris and FACE]() are striving to become an important contributor. 
+ * [SmartSky project with SDSC]() is developing contribution of SDSS.
 
 ## Attribution for Data And Software: Provencance
 
