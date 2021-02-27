@@ -8,8 +8,8 @@
 
 ## Purpose of ODA
 
-ODA is meant to be **collection of interfaces, adapters, and tools to leverage existing data analysis workflows and workflow management platform**.
-It is not meant to be itself an all-around distributed runner system (like was done and is done by various specific project).
+ODA is meant to be **collection of interfaces, adapters, and tools to leverage existing data analysis workflows and workflow management platforms**.
+It is _not meant to be itself an all-around distributed runner system_ (like was done and is done by various specific project).
 
 ### Actually fit-for-purpose
 
