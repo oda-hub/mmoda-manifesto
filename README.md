@@ -35,3 +35,21 @@ We provide full open software and data, and following the best we can good desig
 But we can not make unreasonable effort to assist every alternative deployment.
 
 We can not be responsible for any damage caused by the unsafe deployments (as described in detail in the licences).
+
+## Multi-site federation
+
+Maintaining capacity to replicate allows us to deploy multiple sites. There are currently three publicly-facing sites:
+
+* UNIGE, http://www.astro.unige.ch/cdci/astrooda_ 
+* APC/Paris, _undisclosed_?
+* BITP/Kyiv, _undisclosed_?
+
+Co-existence of these sites is based on the following principles:
+
+* Every frontnd, dispatcher, instrument plugin and backend is **equally deployable** at any site. 
+* Different **sites may have favorable access to some data**, enabling some special requests.
+  * E.g. UNIGE site has access to realtime INTEGRAL data.
+* Sites also **send requests to each other**. For example, INTEGRAL SPI-ACS plugin in APC forwards requests to realtime data at UNIGE.
+* Some requests lead to identical results in different places, ensuring **redundancy**.
+* Discovery of sites is facilitated by **linked data mechanisms**, building **distributed knowledge Graph**.
+
