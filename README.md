@@ -53,3 +53,5 @@ Co-existence of these sites is based on the following principles:
 * Some requests lead to identical results in different places, ensuring **redundancy**.
 * Discovery of sites is facilitated by **linked data mechanisms**, building **distributed knowledge Graph**.
 
+Discovery of services may be facilitated by EOSC Portal.
+
