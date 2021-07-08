@@ -1,5 +1,7 @@
 # Manifesto
 
+![image](https://user-images.githubusercontent.com/3909535/124884013-2dd51e80-dfd2-11eb-823f-465c525de135.png)
+
 |||
 | :--: | :--: |
 | **Version** | 0.1.0 (see tags) |
