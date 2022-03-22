@@ -7,6 +7,7 @@
 | **Version** | 0.1.0 (see tags) |
 | **Prepared-By** | _VS_ |
 | **Status** | _Draft_ |
+| **Latest-Version** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6376845.svg)](https://doi.org/10.5281/zenodo.6376845) |
 
 ## Purpose of ODA
 
