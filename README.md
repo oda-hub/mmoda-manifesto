@@ -10,22 +10,20 @@
 
 ## Purpose of ODA
 
-ODA is meant to be **collection of interfaces, adapters, and tools to leverage existing data analysis workflows and workflow management platforms**.
-It is _not meant to be itself an all-around distributed runner system_ (like was done and is done by various specific project).
+Multi-Messenge Online Data Analysis (MMODA, or sometimes ODA for brevity) is **collection of interfaces, adapters, and tools to leverage existing data analysis workflows and workflow management platforms**.
 
-### Actually fit-for-purpose
+### Fit-for-purpose and community-driven
 
-At this point, quite little manpower is dedicated in ODA to features which are not motivated by involved projects. Original development was supported by [mutualization efforts of UNIGE]() but since then ODA evolved into a collective multi-instutute multi-project effort. For example:
- * [INTEGRAL project](https://www.isdc.unige.ch) and [SNF-funded multi-messenger transient project]() are key contributors at this time, and will develop features relevant for their specific goals: [multi-instrument cross-calibration](), [multi-messenger transient discoveries](), and [quick-look analysis of fresh INTEGRAL data]()
- * [Uni Paris and FACE](https://si-apc.pages.in2p3.fr/face-website/service/mmo/) are becoming an important contributor. 
- * [SmartSky project with SDSC]() is developing contribution of SDSS.
+We focus on features motivated directly by involved projects. Original development was supported by [mutualization efforts of UNIGE](https://www.astro.unige.ch/cdci/) but since then ODA evolved into a collective multi-instutute multi-project effort. 
+ * [INTEGRAL telescope project](https://www.isdc.unige.ch) and SNF-funded multi-messenger transient project are key contributors at this time, and develop features relevant for their specific goals: [multi-instrument cross-calibration](https://indico.ict.inaf.it/event/1001/contributions/10148/attachments/5053/10366/OSA11%20-%20ISGRI.pdf), [multi-messenger transient discoveries](http://linked-open-data.space/), and quick-look analysis of fresh INTEGRAL data.
+ * [University of Paris and FACE](https://si-apc.pages.in2p3.fr/face-website/service/mmo/) are becoming an important contributor. 
+ * [SmartSky project with SDSC](https://odahub.io/) is developing contribution of [SDSS](https://renkulab.io/gitlab/vladimir.savchenko/oda-sdss).
 
 ## Attribution for Data And Software: Provencance
 
-The platform itself contain very limited (if any) additions to scientific data analysis workflows. 
-In all cases, these workflows are provided by the experts, and our role is to facilitate the contributions, and make access to the live workflows as well as the workflow results easiers for the users.
+The core platform itself contain very few (if any) additions to scientific data analysis workflows. In all cases, these workflows are provided by the experts, and our role is to facilitate the contributions, and make access to the live workflows as well as the workflow results easiers for the users.
 
-Hence, it is vital to recognize that ODA services are not themselves providing the data. We attach **Data and Software Provenance**  to the produced results in order to clearly recognize the collective effort, supported by a varienty of institutions and individuals.
+It is vital to recognize that ODA services are not themselves providing the data. We attach **Data and Software Provenance**  to the produced results in order to clearly recognize the collective effort, supported by a varienty of institutions and individuals.
 
 ## Right To Replicate
 
@@ -43,8 +41,8 @@ We can not be responsible for any damage caused by the unsafe deployments (as de
 Maintaining capacity to replicate allows us to deploy multiple sites. There are currently three publicly-facing sites:
 
 * UNIGE, http://www.astro.unige.ch/cdci/astrooda_ 
-* APC/Paris, _undisclosed_?
-* BITP/Kyiv, _undisclosed_?
+* APC/Paris, https://si-apc.pages.in2p3.fr/face-website/service/mmo/
+* BITP/Kyiv, https://ui.oda.virgoua.org/mmoda/
 
 Co-existence of these sites is based on the following principles:
 
