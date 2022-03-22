@@ -48,10 +48,10 @@ Maintaining capacity to replicate allows us to deploy multiple sites. There are 
 
 Co-existence of these sites is based on the following principles:
 
-* Every frontnd, dispatcher, instrument plugin and backend is **equally deployable** at any site. 
+* Every frontend, dispatcher, instrument plugin and backend is **equally deployable** at any site. 
 * Different **sites may have favorable access to some data**, enabling some special requests.
   * E.g. UNIGE site has access to realtime INTEGRAL data.
-* Sites also **send requests to each other**. For example, INTEGRAL SPI-ACS plugin in APC forwards requests to realtime data at UNIGE.
+* Sites also **send requests to each other**. For example, INTEGRAL SPI-ACS plugin in APC forwards requests to near-realtime data at UNIGE.
 * Some requests lead to identical results in different places, ensuring **redundancy**.
 * Discovery of sites is facilitated by **linked data mechanisms**, building **distributed knowledge Graph**.
 
