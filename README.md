@@ -20,6 +20,12 @@ We focus on features motivated directly by involved projects. Original developme
  * [University of Paris and FACE](https://si-apc.pages.in2p3.fr/face-website/service/mmo/) are becoming an important contributor. 
  * [SmartSky project with SDSC](https://odahub.io/) is developing contribution of [SDSS](https://renkulab.io/gitlab/vladimir.savchenko/oda-sdss).
 
+## Open Data = Interoperability Frameworks + Open Policies
+
+**Open data** does not just mean the data which can be freely downloaded. The data needs to be comprehensively described, in order to make re-use posssble. This can be achived with **interoperability frameworks**. 
+
+On the hand, interoperability alone does not guaratnee free and attribution-respecing reuse towards goals of the scientific commons. Sharing should be governed with **open policies*.
+
 ## Attribution for Data And Software: Provencance
 
 The core platform itself contain very few (if any) additions to scientific data analysis workflows. In all cases, these workflows are provided by the experts, and our role is to facilitate the contributions, and make access to the live workflows as well as the workflow results easiers for the users.
