@@ -47,7 +47,7 @@ We can not be responsible for any damage caused by the unsafe deployments (as de
 
 Maintaining capacity to replicate allows us to deploy multiple sites. There are currently three publicly-facing sites:
 
-* UNIGE, http://www.astro.unige.ch/cdci/astrooda_ 
+* UNIGE, http://www.astro.unige.ch/mmoda/
 * APC/Paris, https://si-apc.pages.in2p3.fr/face-website/service/mmo/
 * BITP/Kyiv, https://ui.oda.virgoua.org/mmoda/
 
