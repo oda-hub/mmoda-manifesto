@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-08-22T14:24:03.290Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="r07yCZl1Y2AhEHY9VSip" version="21.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-22T14:32:03.816Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="n3d2gtGAMcJIB2YdYyn5" version="21.2.7" type="github">
   <diagram name="Page-1" id="SqnJS9L8xjwoTWoNPR0q">
     <mxGraphModel dx="1430" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="NecmchMei4JnB6V2mnaV-2" value="Gitlab.in2p3.fr" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="542.26" y="530" width="120" height="60" as="geometry" />
+          <mxGeometry x="870" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NecmchMei4JnB6V2mnaV-4" value="Transients" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="480" width="120" height="50" as="geometry" />
@@ -37,11 +37,14 @@
         <mxCell id="Kat-w21vFC84Cf0yZook-10" value="&lt;div&gt;Fuseki&lt;/div&gt;&lt;div&gt;Knowledge Graph&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="410" y="440" width="150" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Kat-w21vFC84Cf0yZook-11" target="Kat-w21vFC84Cf0yZook-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-11" value="&lt;div&gt;ODA&lt;/div&gt;&lt;div&gt;Ontology&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="420" y="660" width="130" height="60" as="geometry" />
+          <mxGeometry x="420" y="650" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-12" value="IVOA Ontotogy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="710" y="670" width="120" height="60" as="geometry" />
+          <mxGeometry x="450" y="780" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="Kat-w21vFC84Cf0yZook-14" target="NRR4bRWO2TPeIxsoDO97-1">
           <mxGeometry relative="1" as="geometry">
@@ -100,7 +103,7 @@
           <mxGeometry x="50" y="2" width="56" height="56" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-31" value="Schema.org" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="730" y="710" width="120" height="60" as="geometry" />
+          <mxGeometry x="554.34" y="780" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-32" value="RDF documents" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="292.26" y="380" width="117.74" height="40" as="geometry" />
@@ -116,6 +119,9 @@
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-39" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://vectorified.com/images/bot-icon-7.png;" vertex="1" parent="Kat-w21vFC84Cf0yZook-37">
           <mxGeometry x="60" width="56" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NRR4bRWO2TPeIxsoDO97-1" target="Kat-w21vFC84Cf0yZook-10">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
