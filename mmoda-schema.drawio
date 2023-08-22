@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-22T13:44:17.951Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="xytsXgBl1-HVvdjJId3_" version="21.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-22T14:01:49.090Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="uA3j5IVQrxswaqyV34Ns" version="21.2.7" type="github">
   <diagram name="Page-1" id="SqnJS9L8xjwoTWoNPR0q">
     <mxGraphModel dx="1430" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,11 +7,11 @@
         <mxCell id="NecmchMei4JnB6V2mnaV-1" value="RenkuLab" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="620" y="410" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NecmchMei4JnB6V2mnaV-2" value="Gitlab." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="470" y="620" width="120" height="60" as="geometry" />
+        <mxCell id="NecmchMei4JnB6V2mnaV-2" value="Gitlab.in2p3.fr" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="425" y="600" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NecmchMei4JnB6V2mnaV-4" value="Transients" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="490" width="120" height="60" as="geometry" />
+          <mxGeometry x="110" y="480" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NecmchMei4JnB6V2mnaV-6" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;dispatcher&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="150" width="130" height="60" as="geometry" />
@@ -20,7 +20,7 @@
           <mxGeometry x="630" y="490" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NRR4bRWO2TPeIxsoDO97-1" value="Paper parsing" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="340" width="120" height="60" as="geometry" />
+          <mxGeometry x="220" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.astro.unige.ch/mmoda/sites/all/themes/bootstrap_mmoda/logo.png;" vertex="1" parent="1">
           <mxGeometry x="285.65" y="160" width="98.69" height="30" as="geometry" />
@@ -38,10 +38,34 @@
           <mxGeometry x="662.26" y="200" width="35.48" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-8" value="Paper generation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="450" width="120" height="60" as="geometry" />
+          <mxGeometry x="150" y="270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-9" value="ODA Bot" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="570" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-10" value="&lt;div&gt;Fuseki&lt;/div&gt;&lt;div&gt;KG&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-11" value="&lt;div&gt;ODA&lt;/div&gt;&lt;div&gt;Ontology&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="600" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-12" value="IVOA Ontoogy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-14" value="arXiv" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="640" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-16" value="&lt;div&gt;Astro&lt;/div&gt;&lt;div&gt;Alert&lt;/div&gt;&lt;div&gt;Stream&lt;br&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="680" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-17" value="github" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-18" value="galaxy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="554.34" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-19" value="DACE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="810" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
