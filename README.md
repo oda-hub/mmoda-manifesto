@@ -16,13 +16,17 @@ Multi-Messenge Online Data Analysis (MMODA, or sometimes ODA for brevity) is **c
 ### Fit-for-purpose and community-driven
 
 We focus on features motivated directly by involved projects. Original development was supported by [mutualization efforts of UNIGE](https://www.astro.unige.ch/cdci/) but since then ODA evolved into a collective multi-instutute multi-project effort. 
+
+ * AstroORDAS project (SwissUniversities ORD Track B project) currently supports much of MMODA activities.
  * [INTEGRAL telescope project](https://www.isdc.unige.ch) and SNF-funded multi-messenger transient project are key contributors at this time, and develop features relevant for their specific goals: [multi-instrument cross-calibration](https://indico.ict.inaf.it/event/1001/contributions/10148/attachments/5053/10366/OSA11%20-%20ISGRI.pdf), [multi-messenger transient discoveries](http://linked-open-data.space/), and quick-look analysis of fresh INTEGRAL data.
- * [University of Paris and FACE](https://si-apc.pages.in2p3.fr/face-website/service/mmo/) are becoming an important contributor. 
- * [SmartSky project with SDSC](https://odahub.io/) is developing contribution of [SDSS](https://renkulab.io/gitlab/vladimir.savchenko/oda-sdss).
+ * [University of Paris and FACE](https://si-apc.pages.in2p3.fr/face-website/service/mmo/) is an important contributor to MMODA. 
+ * [SmartSky project with SDSC](https://odahub.io/) allowed to create development environment allowing expert astronomers to create tools [SDSS](https://renkulab.io/gitlab/vladimir.savchenko/oda-sdss).
+ * [EuroScienceGateway](https://galaxyproject.org/projects/esg/), although does not support directly support MMODA, enables important synergies on workflow and tool development, cataloging, testing, and publishing.
+ 
 
 ## Open Data = Interoperability Frameworks + Open Policies
 
-**Open data** does not just mean the data which can be freely downloaded. The data needs to be comprehensively described, in order to make re-use posssble. This can be achived with **interoperability frameworks**. 
+**Open data** does not just mean the data which can be freely downloaded. The data needs to be comprehensively described, in order to make **re-use** posssble. This can be achived with **interoperability frameworks**. 
 
 On the hand, interoperability alone does not guaratnee free and attribution-respecing reuse towards goals of the scientific commons. Sharing should be governed with **open policies*.
 
@@ -43,7 +47,7 @@ But we can not make unreasonable effort to assist every alternative deployment.
 
 We can not be responsible for any damage caused by the unsafe deployments (as described in detail in the licences).
 
-## Multi-site federation
+## Multi-site ODA federation
 
 Maintaining capacity to replicate allows us to deploy multiple sites. There are currently three publicly-facing sites:
 
@@ -62,3 +66,4 @@ Co-existence of these sites is based on the following principles:
 
 Discovery of services may be facilitated by EOSC Portal.
 
+## Federation across Analysis Platforms
