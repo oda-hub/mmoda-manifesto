@@ -1,12 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2023-08-22T14:01:49.090Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="uA3j5IVQrxswaqyV34Ns" version="21.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-22T14:16:29.684Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="3Vt_WPpmoRESMaHAO1hi" version="21.2.7" type="github">
   <diagram name="Page-1" id="SqnJS9L8xjwoTWoNPR0q">
     <mxGraphModel dx="1430" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NecmchMei4JnB6V2mnaV-1" value="RenkuLab" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="410" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="NecmchMei4JnB6V2mnaV-2" value="Gitlab.in2p3.fr" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="425" y="600" width="120" height="60" as="geometry" />
         </mxCell>
@@ -40,11 +37,8 @@
         <mxCell id="Kat-w21vFC84Cf0yZook-8" value="Paper generation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="150" y="270" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Kat-w21vFC84Cf0yZook-9" value="ODA Bot" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-10" value="&lt;div&gt;Fuseki&lt;/div&gt;&lt;div&gt;KG&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="450" width="120" height="60" as="geometry" />
+          <mxGeometry x="410" y="480" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-11" value="&lt;div&gt;ODA&lt;/div&gt;&lt;div&gt;Ontology&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="600" width="130" height="60" as="geometry" />
@@ -53,10 +47,10 @@
           <mxGeometry x="710" y="670" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-14" value="arXiv" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="30" y="640" width="120" height="80" as="geometry" />
+          <mxGeometry x="70" y="690" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-16" value="&lt;div&gt;Astro&lt;/div&gt;&lt;div&gt;Alert&lt;/div&gt;&lt;div&gt;Stream&lt;br&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="680" width="120" height="80" as="geometry" />
+          <mxGeometry x="130" y="730" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-17" value="github" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="365" y="720" width="120" height="60" as="geometry" />
@@ -66,6 +60,24 @@
         </mxCell>
         <mxCell id="Kat-w21vFC84Cf0yZook-19" value="DACE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-25" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="650" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NecmchMei4JnB6V2mnaV-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="Kat-w21vFC84Cf0yZook-25" vertex="1">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://renkulab.io/static/public/img/logo.svg;" vertex="1" parent="Kat-w21vFC84Cf0yZook-25">
+          <mxGeometry x="6.430000000000064" y="8.449999999999989" width="107.14" height="43.1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-26" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="660" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-9" value="ODA Bot&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; " style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Kat-w21vFC84Cf0yZook-26">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kat-w21vFC84Cf0yZook-24" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://vectorified.com/images/bot-icon-7.png;" vertex="1" parent="Kat-w21vFC84Cf0yZook-26">
+          <mxGeometry x="60" width="56" height="56" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
