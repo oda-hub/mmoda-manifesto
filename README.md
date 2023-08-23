@@ -66,4 +66,33 @@ Co-existence of these sites is based on the following principles:
 
 Discovery of services may be facilitated by EOSC Portal.
 
-## Federation across Analysis Platforms
+## Diverse Analysis Platforms and Federation
+
+As the need to develop web-based Scientific Data Center services got more and more broadly recognized, multiple independent projects developed a number of different platforms. Even without our scope of activity, we are directly or indirectly involved in the following projects:
+
+* MMODA platform by AstroORDAS project
+* Galaxy platform and EuroScienceGateway project
+* DACE platform and project
+* Renku platform by SDSC
+* DataLabs platform by ESA
+
+Many other similar projects and platforms exist. Some platforms have wide variety of features while others focus on particular aspects. We identify the following common patterns and features a platform has:
+
+* UI
+  * customized browser UI for performing data analysis tasks, with UI elements for input and visualization
+  * interactive jupyter environment
+  * command line enviroment
+  * http API
+* catalog of data analysis tools and workflows
+  * MMODA workflow catalog (gitlab with optional KG)
+  * galaxy toolsched
+  * workflowhub
+* means to discover and stage data stored in data archives
+  * archive interfaces, e.g. IVOA
+* means to make use of large computing clusters
+  * computing resource interfaces like ARC
+
+We find that **some degree of plurality in the platforms landscape does not lead to divergence of efforts but can be a strength of this ecosystem, if platform architecure respects principles of design interoperability**. 
+* For example, Jupyter (and often jupyterhub) is almost a must-have component in all of these platforms as it is explicitly made with the idea of reusable software.
+* Another case, AladinLite, is a UI element for astrophysical images which is currently de-factor standard in web-based astronomical platforms.
+* Data Models and ontologies deriving from Linked Data (e.g. JSON-LD) are used in a wide range of platforms to label assets (data, code, etc).
