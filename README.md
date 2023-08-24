@@ -89,8 +89,9 @@ Many other similar projects and platforms exist. Some platforms have wide variet
   * workflowhub
 * means to discover and stage data stored in data archives
   * archive interfaces, e.g. IVOA
+  * tools to orchestrate data transfers, like rucio
 * means to make use of large computing clusters
-  * computing resource interfaces like ARC
+  * computing resource interfaces like ARC, UWS
 
 We find that **some degree of plurality in the platforms landscape does not lead to divergence of efforts but can be a strength of this ecosystem, if platform architecure respects principles of design interoperability**. 
 * For example, Jupyter (and often jupyterhub) is almost a must-have component in all of these platforms as it is explicitly made with the idea of reusable software.
