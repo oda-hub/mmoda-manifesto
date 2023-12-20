@@ -1,0 +1,176 @@
+' https://gitlab.cta-observatory.org/cta-computing/icds/icd-dpps-ict/-/issues/2
+@startuml mmoda-schema
+!include <cloudogu/common>
+!include <cloudogu/tools/k8s>
+
+footer DevOps diagram for DPPS ICT ICD
+scale max 1024 width
+
+skinparam {
+    ' linetype polyline
+    ' nodesep 15
+    ' ranksep 30
+    defaultFontSize 19
+    arrowFontSize 19
+    rectangleRoundCorner 30
+    rectangleBorderThickness 0.5
+}
+
+
+
+' rectangle "Gitlab.in2p3.fr" as Gitlab.in2p3.fr {
+
+' }
+
+[Sky Transients] as transients #SkyBlue
+
+' rectangle "JupyterHub" as JupyterHub {
+
+' }
+
+
+
+[arXiv] as arXiv #LightYellow
+
+[Astro Alert Stream] as astro_alert_stream #LightYellow
+
+transients --up--> astro_alert_stream
+
+' rectangle "github" as github {
+
+' }
+
+' rectangle "galaxy" as galaxy {
+
+' }
+
+' rectangle "DACE" as DACE {
+
+' }
+
+
+
+
+' rectangle "RDF documents" as RDF_documents {
+
+' }
+
+
+rectangle "UNIGE DSIC K8S" as unige_dstic_k8s #WhiteSmoke {
+  
+  rectangle "MMODA Instance" as mmoda #LightGray {
+    [dispatcher] as dispatcher
+    [frontend] as frontend
+    [INTEGRAL backend] as integral_backend
+    [backend] as backend
+  }
+
+
+ [Knowledge Graph (fuseki)] as fuseki
+
+ [NLP Bot] as NLP #LightSalmon
+ [ODA Bot\n(controller)] as ODA_Bot #LightSalmon
+}
+
+
+
+rectangle "SDSC" as SDSC #WhiteSmoke {
+  rectangle "gitlab.renkulab.io" as gitlab_renkulab_io #LightGray {
+    [astro tool: GRB detection] as astro_tool_GRB_detection
+    [astro tool: Euclid Phosphoros] as astro_tool_Euclid_Phosphoros
+    [astro tool: Gaia] as astro_tool_Gaia
+    [astro tool: LIGO] as astro_tool_LIGO
+    [astro tool: MeerKAT] as astro_tool_MeerKAT
+  }
+
+  [Renku] as Renku #LightSkyBlue
+}
+
+[Renku] as Renku #LightSkyBlue
+
+Renku -down-> gitlab_renkulab_io
+
+
+ODA_Bot <-- astro_tool_GRB_detection
+ODA_Bot <-- astro_tool_Euclid_Phosphoros
+ODA_Bot <-- astro_tool_Gaia
+ODA_Bot <-- astro_tool_LIGO
+ODA_Bot <-- astro_tool_MeerKAT
+
+
+
+[gitlab.astro.unige.ch] as gitlab_astro_unige_ch
+
+
+
+
+
+NLP <--- astro_alert_stream
+NLP <--- arXiv
+
+NLP --up-> fuseki
+
+[GraphSearch] as GraphSearch
+
+NLP -down-> GraphSearch
+
+
+
+' gitlab_runners -down-> mmoda : CI/CD
+
+gitlab_astro_unige_ch -down-> dispatcher : CI/CD
+gitlab_astro_unige_ch -down-> frontend : CI/CD
+
+ODA_Bot ---> backend
+
+rectangle "Ontotogies" as ontotogies #LightGray {
+  [IVOA Ontotogy] as IVOA_Ontotogy
+  [Schema.org] as Schema.org
+  [odahub.io] as odahub_io_ontotogy
+}
+
+ontotogies ---> ODA_Bot
+
+
+fuseki ---> ODA_Bot
+
+
+[Galaxy] as galaxy 
+
+ODA_Bot ---> galaxy
+
+
+[Lesta] as lesta
+[baobab] as baobab
+[yggdrasil] as yggdrasil
+
+integral_backend ---> lesta 
+integral_backend ---> baobab 
+integral_backend ---> yggdrasil
+
+
+rectangle "Isilon" as isilon #LightGray {
+  [INTEGRAL data] as integral_data
+}
+
+' isilon -down-> lesta
+
+actor "Astro Analysis User" as User #LightGreen
+
+User --up--> GraphSearch : search
+User --up--> frontend : UI_analysis
+User --up--> dispatcher : API analysis
+User --up--> galaxy : UI analysis
+
+
+actor "Astro Analysis Developer" as AstroDeveloper #LightSteelBlue
+
+AstroDeveloper --up--> Renku : tool development
+AstroDeveloper --up--> gitlab_renkulab_io : tool development
+
+actor "ODA Platform Developer" as ODAPlatformDeveloper #LightSteelBlue
+
+ODAPlatformDeveloper --up-> gitlab_astro_unige_ch #DarkGoldenRod  : platform development
+ODAPlatformDeveloper --up-> ontotogies #DarkGoldenRod 
+
+@enduml
