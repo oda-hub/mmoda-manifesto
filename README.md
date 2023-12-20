@@ -97,3 +97,6 @@ We find that **some degree of plurality in the platforms landscape does not lead
 * For example, Jupyter (and often jupyterhub) is almost a must-have component in all of these platforms as it is explicitly made with the idea of reusable software.
 * Another case, AladinLite, is a UI element for astrophysical images which is currently de-factor standard in web-based astronomical platforms.
 * Data Models and ontologies deriving from Linked Data (e.g. JSON-LD) are used in a wide range of platforms to label assets (data, code, etc).
+
+
+![](mmoda-schema.png)
