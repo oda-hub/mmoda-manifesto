@@ -3,6 +3,7 @@
 !include <cloudogu/common>
 !include <cloudogu/tools/k8s>
 
+
 footer DevOps diagram for DPPS ICT ICD
 scale max 1024 width
 
@@ -17,12 +18,13 @@ skinparam {
 }
 
 
+' participant "<img:grb.jpg>" as blah
 
 ' rectangle "Gitlab.in2p3.fr" as Gitlab.in2p3.fr {
 
 ' }
 
-[Sky Transients] as transients #SkyBlue
+' [Sky Transients] as transients #SkyBlue
 
 ' rectangle "JupyterHub" as JupyterHub {
 
@@ -34,7 +36,7 @@ skinparam {
 
 [Astro Alert Stream] as astro_alert_stream #LightYellow
 
-transients --up--> astro_alert_stream
+' transients --up--> astro_alert_stream
 
 ' rectangle "github" as github {
 
@@ -76,14 +78,16 @@ rectangle "UNIGE DSIC K8S" as unige_dstic_k8s #WhiteSmoke {
 
 rectangle "SDSC" as SDSC #WhiteSmoke {
   rectangle "gitlab.renkulab.io" as gitlab_renkulab_io #LightGray {
-    [astro tool: GRB detection] as astro_tool_GRB_detection
-    [astro tool: Euclid Phosphoros] as astro_tool_Euclid_Phosphoros
-    [astro tool: Gaia] as astro_tool_Gaia
-    [astro tool: LIGO] as astro_tool_LIGO
-    [astro tool: MeerKAT] as astro_tool_MeerKAT
+    [tool\nGRB detection] as astro_tool_GRB_detection
+    [tool\nEuclid] as astro_tool_Euclid_Phosphoros
+    [tool\nGaia] as astro_tool_Gaia
+    [tool\nLIGO] as astro_tool_LIGO
+    [tool\nMeerKAT] as astro_tool_MeerKAT
   }
 
   [Renku] as Renku #LightSkyBlue
+
+  [Renku KG] as renku_kg  #GoldenRod
 }
 
 [Renku] as Renku #LightSkyBlue
@@ -91,11 +95,7 @@ rectangle "SDSC" as SDSC #WhiteSmoke {
 Renku -down-> gitlab_renkulab_io
 
 
-ODA_Bot <-- astro_tool_GRB_detection
-ODA_Bot <-- astro_tool_Euclid_Phosphoros
-ODA_Bot <-- astro_tool_Gaia
-ODA_Bot <-- astro_tool_LIGO
-ODA_Bot <-- astro_tool_MeerKAT
+ODA_Bot <-- gitlab_renkulab_io
 
 
 
@@ -112,24 +112,29 @@ NLP --up-> fuseki
 
 [GraphSearch] as GraphSearch
 
-NLP -down-> GraphSearch
+NLP ---> GraphSearch
 
+[Wikipedia] as Wikipedia #LightYellow
 
+GraphSearch ---> Wikipedia
 
 ' gitlab_runners -down-> mmoda : CI/CD
 
-gitlab_astro_unige_ch -down-> dispatcher : CI/CD
-gitlab_astro_unige_ch -down-> frontend : CI/CD
+gitlab_astro_unige_ch ---> dispatcher : CI/CD
+gitlab_astro_unige_ch ---> frontend : CI/CD
 
 ODA_Bot ---> backend
 
-rectangle "Ontotogies" as ontotogies #LightGray {
-  [IVOA Ontotogy] as IVOA_Ontotogy
-  [Schema.org] as Schema.org
-  [odahub.io] as odahub_io_ontotogy
+rectangle "Ontotogies" as ontotogies #LightGoldenRodYellow {
+  [IVOA Ontotogy] as IVOA_Ontotogy #GoldenRod
+  [Schema.org] as Schema.org #GoldenRod
+  [odahub.io] as odahub_io_ontotogy #GoldenRod
 }
 
-ontotogies ---> ODA_Bot
+' ontotogies ---> ODA_Bot
+
+ontotogies ---> renku_kg 
+ontotogies ---> fuseki
 
 
 fuseki ---> ODA_Bot
@@ -157,16 +162,18 @@ rectangle "Isilon" as isilon #LightGray {
 
 actor "Astro Analysis User" as User #LightGreen
 
-User --up--> GraphSearch : search
-User --up--> frontend : UI_analysis
-User --up--> dispatcher : API analysis
-User --up--> galaxy : UI analysis
+User --up--> GraphSearch #DarkGoldenRod : search
+User --up--> frontend #DarkGoldenRod : UI_analysis
+User --up--> dispatcher #DarkGoldenRod : API analysis
+User --up--> galaxy #DarkGoldenRod : UI analysis
 
+
+' myimage : <img:grb.jpg>
 
 actor "Astro Analysis Developer" as AstroDeveloper #LightSteelBlue
 
-AstroDeveloper --up--> Renku : tool development
-AstroDeveloper --up--> gitlab_renkulab_io : tool development
+AstroDeveloper --up--> Renku #DarkGoldenRod : tool development
+AstroDeveloper --up--> gitlab_renkulab_io #DarkGoldenRod : tool development
 
 actor "ODA Platform Developer" as ODAPlatformDeveloper #LightSteelBlue
 
