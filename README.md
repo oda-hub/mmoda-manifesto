@@ -123,7 +123,7 @@ Per typical backend, but may depend strongly on the backend:
   * 4 CPU, 10 Gb RAM, 100Gb persistent storage
 * HPC cluster, e.g. slurm scheduler, and service account (possibly serveral)
   * typical capacity 100 jobs to run at the same time
-  * egress from the cluster to 
+  * egress from the HPC cluster to kubernetes cluster
   * shared storage for intermediate results, 20 Tb
 * INTEGRAL archive which can be:
   * mounted in k8s pods, e.g. with NFS
