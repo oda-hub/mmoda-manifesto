@@ -105,6 +105,7 @@ We find that **some degree of plurality in the platforms landscape does not lead
 ## Requirements for deployment
 
 * A kubernetes cluster, API > v1.23
+  * CSI with ReadWriteMany persistent volumes
 
 ### Base platform: frontend and dispatcher
 
@@ -118,8 +119,12 @@ Per typical backend, but may depend strongly on the backend:
  
 ### INTEGRAL backend
 
-* 4 CPU, 10 Gb RAM, 100Gb persistent storage
+* on kubernetes cluster:
+  * 4 CPU, 10 Gb RAM, 100Gb persistent storage
 * HPC cluster, e.g. slurm scheduler, and service account (possibly serveral)
+  * typical capacity 100 jobs to run at the same time
+  * egress from the cluster to 
+  * shared storage for intermediate results, 20 Tb
 * INTEGRAL archive which can be:
   * mounted in k8s pods, e.g. with NFS
   * accessing on the HPC cluster
