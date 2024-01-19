@@ -100,3 +100,26 @@ We find that **some degree of plurality in the platforms landscape does not lead
 
 
 ![](mmoda-schema.png)
+
+
+## Requirements for deployment
+
+* A kubernetes cluster, API > v1.23
+
+### Base platform: frontend and dispatcher
+
+* 5 CPU, 10 Gb RAM, 50Gb persistent storage
+
+### Contributed notebook backends
+
+Per typical backend, but may depend strongly on the backend:
+
+* 2 CPU, 10 Gb RAM, 10Gb persistent storage
+ 
+### INTEGRAL backend
+
+* 4 CPU, 10 Gb RAM, 100Gb persistent storage
+* HPC cluster, e.g. slurm scheduler, and service account (possibly serveral)
+* INTEGRAL archive which can be:
+  * mounted in k8s pods, e.g. with NFS
+  * accessing on the HPC cluster
