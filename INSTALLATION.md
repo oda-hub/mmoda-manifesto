@@ -12,7 +12,7 @@ The central point, coordinatesdata flow, exposes data analysis API as well as pl
 * container github.com/oda-hub/dispatcher-container-compact
 * external resources with corresponding credentials:
   * SMTP server
-  * Sentry
+  * Sentry (we use https://apcglitchtip.in2p3.fr/)
   * Secret key for JWT token validation (corresponds to frontend)
   * (semi-optional) MMODA Product Gallery 
   * (optional) mysql for usage statistic sidecar
