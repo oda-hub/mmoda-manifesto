@@ -17,12 +17,15 @@ Multi-Messenge Online Data Analysis (MMODA, or sometimes ODA for brevity) is **c
 
 We focus on features motivated directly by involved projects. Original development was supported by [mutualization efforts of UNIGE](https://www.astro.unige.ch/cdci/) but since then ODA evolved into a collective multi-instutute multi-project effort. 
 
+TODO: update the list
+
  * AstroORDAS project (SwissUniversities ORD Track B project) currently supports much of MMODA activities.
  * [INTEGRAL telescope project](https://www.isdc.unige.ch) and SNF-funded multi-messenger transient project are key contributors at this time, and develop features relevant for their specific goals: [multi-instrument cross-calibration](https://indico.ict.inaf.it/event/1001/contributions/10148/attachments/5053/10366/OSA11%20-%20ISGRI.pdf), [multi-messenger transient discoveries](http://linked-open-data.space/), and quick-look analysis of fresh INTEGRAL data.
  * [University of Paris and FACE](https://si-apc.pages.in2p3.fr/face-website/service/mmo/) is an important contributor to MMODA. 
  * [SmartSky project with SDSC](https://odahub.io/) allowed to create development environment allowing expert astronomers to create tools [SDSS](https://renkulab.io/gitlab/vladimir.savchenko/oda-sdss).
  * [EuroScienceGateway](https://galaxyproject.org/projects/esg/), although does not support directly support MMODA, enables important synergies on workflow and tool development, cataloging, testing, and publishing.
- 
+ * [ACME](https://www.acme-astro.eu/) ...
+
 
 ## Open Data = Interoperability Frameworks + Open Policies
 
@@ -52,19 +55,18 @@ We can not be responsible for any damage caused by the unsafe deployments (as de
 Maintaining capacity to replicate allows us to deploy multiple sites. There are currently three publicly-facing sites:
 
 * UNIGE, http://www.astro.unige.ch/mmoda/
-* APC/Paris, https://si-apc.pages.in2p3.fr/face-website/service/mmo/
-* BITP/Kyiv, https://ui.oda.virgoua.org/mmoda/
+* APC/Paris, https://staging.odahub.fr/mmoda/
+* KNU/Kyiv, https://odahub.k8s.esoc.knu.ua/mmoda/
 
 Co-existence of these sites is based on the following principles:
 
 * Every frontend, dispatcher, instrument plugin and backend is **equally deployable** at any site. 
 * Different **sites may have favorable access to some data**, enabling some special requests.
-  * E.g. UNIGE site has access to realtime INTEGRAL data.
+  * E.g. UNIGE site has direct access to INTEGRAL data.
 * Sites also **send requests to each other**. For example, INTEGRAL SPI-ACS plugin in APC forwards requests to near-realtime data at UNIGE.
 * Some requests lead to identical results in different places, ensuring **redundancy**.
 * Discovery of sites is facilitated by **linked data mechanisms**, building **distributed knowledge Graph**.
 
-Discovery of services may be facilitated by EOSC Portal.
 
 ## Diverse Analysis Platforms and Federation
 
@@ -104,8 +106,9 @@ We find that **some degree of plurality in the platforms landscape does not lead
 
 ## Requirements for deployment
 
-* A kubernetes cluster, API > v1.23
+* A kubernetes cluster, API > v1.33
   * CSI with ReadWriteMany persistent volumes
+  * Avoiding ephemeral storage pressure on nodes (~100Gb per node)
 
 ### Base platform: frontend and dispatcher
 
@@ -116,7 +119,9 @@ We find that **some degree of plurality in the platforms landscape does not lead
 Per typical backend, but may depend strongly on the backend:
 
 * 2 CPU, 10 Gb RAM, 10Gb persistent storage
- 
+* 1 CPU, 16 Gb RAM, 20Gb ephemeral storage for the bot to build the backend container
+  * can be only done on one of the federated MMODA deployments
+   
 ### INTEGRAL backend
 
 * on kubernetes cluster:
